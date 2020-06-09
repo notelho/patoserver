@@ -30,7 +30,7 @@ router.get('/', async function (req, res, next) {
 
     } catch (error) {
 
-        res.send({ error: error.message }).status(500).end();
+        res.status(500).send({ error: error.message }).end();
 
     }
 
